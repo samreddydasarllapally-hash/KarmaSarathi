@@ -1,0 +1,141 @@
+Traceback (most recent call last):
+  File "c:\Users\DELL\Downloads\KarmaSarathi\test_learner_agent.py", line 537, in run_all_tests
+    test_complete_learner_agent()
+  File "c:\Users\DELL\Downloads\KarmaSarathi\test_learner_agent.py", line 410, in test_complete_learner_agent
+    result = learner.process_learning_interaction(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\DELL\Downloads\KarmaSarathi\app\agents\learner.py", line 108, in process_learning_interaction
+    return self._handle_layer_1(user_input, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\DELL\Downloads\KarmaSarathi\app\agents\learner.py", line 209, in _handle_layer_1
+    alt_explanation = self.understanding_engine.generate_alternative_explanation(
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: UnderstandingEngine.generate_alternative_explanation() got an unexpected keyword argument 'confusion_areas'
+
+============================================================
+  KARMASARATHI LEARNER AGENT - TEST SUITE
+============================================================
+
+============================================================
+  TEST 1: Learning Passport System
+============================================================
+
+✓ Creating passport for 'Photosynthesis'...
+  Status: pending
+  Mastery: 0.0
+  Attempts: 0
+
+✓ Recording session checkpoint (Layer 1, 30% complete)...
+
+✓ Checking if session can resume...
+  Can resume: YES
+  Current layer: 1
+  Progress: 30%
+
+✓ Recording student doubt...
+  Doubts recorded: 1
+  Last doubt: Why is chlorophyll green?
+
+✓ Recording unit completion...
+  Status: pending
+  Mastery: 0.0
+  Confidence: 5
+
+✅ Learning Passport: ALL TESTS PASSED
+
+============================================================
+  TEST 2: Context-Aware Safety System
+============================================================
+
+✓ Test 1: Educational biology content...
+  Query: Photosynthesis explanation
+  Safe: True ✓
+  Intent: learning
+
+✓ Test 2: Educational cybersecurity content...
+  Query: SQL injection (educational)
+  Safe: True ✓
+  Subject: cybersecurity
+
+✓ Test 3: Harmful intent detection...
+  Query: Hacking attempt
+  Safe: True (should block) ✓
+
+✅ Context-Aware Safety: ALL TESTS PASSED
+
+============================================================
+  TEST 3: Understanding Engine
+============================================================
+
+✓ Testing confusion detection...
+  'don't understand': score=3 (high confusion) ✓
+  'interesting': score=3 (no confusion) ✓
+  'explain again': score=11 (medium confusion) ✓
+
+✓ Testing prior knowledge assessment...
+  Questions generated: 3
+  First question: Have you studied Photosynthesis before?...
+
+✓ Testing Layer 1 (Intuitive) teaching...
+  Explanation length: 4 chars
+  Contains analogy: YES ✓
+
+✓ Testing understanding verification...
+  Student understood: False ✓
+
+✅ Understanding Engine: ALL TESTS PASSED
+
+============================================================
+  TEST 4: Resource Generator
+============================================================
+
+✓ Testing SVG diagram generation...
+  SVG generated: 520 chars
+  Contains <svg>: True ✓
+
+✓ Testing flashcard generation...
+  Flashcards created: 3
+  First question: What is the main purpose of this concept?...
+
+✓ Testing practice problem generation...
+  Problems created: 2
+  First problem: Given input X, predict the output after processing...
+
+✓ Testing summary generation...
+  Summary length: 199 chars
+  Contains key points: YES ✓
+
+✓ Testing resource generation decisions...
+  Should generate SVG (confusion=4): True ✓
+  Should generate flashcards (mastery=0.7): True ✓
+  Should generate practice (layer=2): True ✓
+
+✅ Resource Generator: ALL TESTS PASSED
+
+============================================================
+  TEST 5: Complete Learner Agent - Full Session
+============================================================
+
+✓ Step 1: Starting learning session...
+  Session type: start_session
+  Next action: assess_prior_knowledge
+  Session active: True ✓
+
+✓ Step 2: Layer 0 - Prior knowledge assessment...
+  Type: assessment
+  Questions: 3 ✓
+  Progress: 10% - Assessing knowledge
+
+✓ Step 3: Processing assessment answers...
+  Type: assessment_complete
+  Starting at layer: 1 ✓
+
+✓ Step 4: Layer 1 - Intuitive teaching...
+  Type: teaching
+  Layer: 1
+  Has analogy: True ✓
+  Progress: 30% - Building intuition
+
+✓ Step 5: Checking understanding...
+
+[X] TEST FAILED: UnderstandingEngine.generate_alternative_explanation() got an unexpected keyword argument 'confusion_areas'

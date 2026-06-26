@@ -1,0 +1,39 @@
+<svg width="600" height="400" viewBox="0 0 600 400" xmlns="http://www.w3.org/2000/svg">
+  <rect x="50" y="50" width="500" height="300" rx="10" fill="#f0f0f0"/>
+  <g transform="translate(75, 75)">
+    <rect x="0" y="0" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="75" y="25" text-anchor="middle" font-size="18" fill="#fff">Unnormalized Table</text>
+    <rect x="0" y="60" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="75" y="95" text-anchor="middle" font-size="18" fill="#fff">Normalized Table</text>
+    <circle cx="20" cy="120" r="10" fill="#007bff"/>
+    <text x="15" y="130" text-anchor="middle" font-size="18" fill="#fff">Primary Key</text>
+    <circle cx="20" cy="150" r="10" fill="#007bff"/>
+    <text x="15" y="170" text-anchor="middle" font-size="18" fill="#fff">Foreign Key</text>
+    <line x1="20" y1="120" x2="150" y2="120" stroke="#007bff" stroke-width="2"/>
+    <text x="120" y="125" font-size="18" fill="#000">One-to-One</text>
+    <line x1="20" y1="150" x2="150" y2="150" stroke="#007bff" stroke-width="2"/>
+    <text x="120" y="155" font-size="18" fill="#000">One-to-Many</text>
+    <rect x="220" y="0" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="275" y="25" text-anchor="middle" font-size="18" fill="#fff">First Normal Form (1NF)</text>
+    <rect x="220" y="60" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="275" y="95" text-anchor="middle" font-size="18" fill="#fff">Second Normal Form (2NF)</text>
+    <rect x="220" y="120" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="275" y="155" text-anchor="middle" font-size="18" fill="#fff">Third Normal Form (3NF)</text>
+    <line x1="220" y1="50" x2="220" y2="250" stroke="#007bff" stroke-width="2"/>
+    <text x="220" y="200" font-size="18" fill="#000">Normalization Process</text>
+  </g>
+  <g transform="translate(450, 100)">
+    <rect x="-50" y="-50" width="200" height="100" rx="10" fill="#f0f0f0"/>
+    <text x="-25" y="25" text-anchor="middle" font-size="18" fill="#000">Before Normalization</text>
+    <rect x="-50" y="0" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="-25" y="35" text-anchor="middle" font-size="18" fill="#fff">Redundant Data</text>
+    <rect x="-50" y="60" width="150" height="50" rx="5" fill="#007bff"/>
+    <text x="-25" y="95" text-anchor="middle" font-size="18" fill="#fff">Data Integrity Issues</text>
+    <line x1="-50" y1="0" x2="-50" y2="120" stroke="#007bff" stroke-width="2"/>
+    <text x="-50" y="100" font-size="18" fill="#000">After Normalization</text>
+    <circle cx="0" cy="150" r="10" fill="#007bff"/>
+    <text x="-5" y="170" text-anchor="middle" font-size="18" fill="#fff">No Redundant Data</text>
+    <circle cx="0" cy="180" r="10" fill="#007bff"/>
+    <text x="-5" y="200" text-anchor="middle" font-size="18" fill="#fff">Improved Data Integrity</text>
+  </g>
+</svg>

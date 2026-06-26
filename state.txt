@@ -1,0 +1,16 @@
+{
+  "goal": "Hackathon",
+  "topics": [
+    "LangGraph",
+    "FastAPI",
+    "React"
+  ],
+  "wake": "7 AM",
+  "sleep": "11 PM",
+  "goal_specific": {
+    "project_idea": "I have a hackathon in 2 days, building KarmaSarathi AI",
+    "team_size": "solo",
+    "your_role": "full stack",
+    "current_progress": "just started"
+  }
+}

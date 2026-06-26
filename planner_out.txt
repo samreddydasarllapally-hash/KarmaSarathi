@@ -1,0 +1,344 @@
+
+------------------------------------------------------------
+[USER — Goal]: Semester Exam
+[Planner] Stage: collect_deadline | Goal: Semester Exam (exam)
+[STAGE]: collect_deadline
+[BOT]:
+When is your deadline?
+
+------------------------------------------------------------
+[USER — Deadline]: 10 days
+[Planner] Stage: collect_routine | Goal: Semester Exam (exam)
+[STAGE]: collect_routine
+[BOT]:
+What time do you usually wake up?
+
+------------------------------------------------------------
+[USER — Wake time]: 6 AM
+[Planner] Stage: collect_routine | Goal: Semester Exam (exam)
+[STAGE]: collect_routine
+[BOT]:
+What time do you usually go to sleep?
+
+------------------------------------------------------------
+[USER — Sleep time]: 11 PM
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+What time do you typically have breakfast?
+
+------------------------------------------------------------
+[USER — Breakfast]: 7:30 AM
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+What time do you typically have lunch?
+
+------------------------------------------------------------
+[USER — Lunch]: 1 PM
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+What time do you typically have dinner?
+
+------------------------------------------------------------
+[USER — Dinner]: 8 PM
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Do you have college or office hours? If yes, enter start-end times like 9am-4pm; otherwise type 'no'.
+
+------------------------------------------------------------
+[USER — College hours]: 9am-4pm
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Do you go to the gym regularly? If yes, enter when; otherwise type 'no'.
+
+------------------------------------------------------------
+[USER — Gym]: no
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Do you have daily travel time? If yes, enter the usual time or duration; otherwise type 'no'.
+
+------------------------------------------------------------
+[USER — Travel]: 30 min
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Do you have daily prayer / meditation time? If yes, enter when; otherwise type 'no'.
+
+------------------------------------------------------------
+[USER — Prayer]: no
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Any fixed activities that cannot be moved? If none, type 'no'.
+
+------------------------------------------------------------
+[USER — Fixed activities]: no
+[Planner] Stage: collect_routine_detail | Goal: Semester Exam (exam)
+[STAGE]: collect_routine_detail
+[BOT]:
+Preferred water reminder interval? (e.g. every 60 min, every 2 hours, no reminder)
+
+------------------------------------------------------------
+[USER — Water interval]: every 2 hours
+[Planner] Stage: collect_goal_specific | Goal: Semester Exam (exam)
+[STAGE]: collect_goal_specific
+[BOT]:
+Please answer the following:
+1. Which subjects do you need to study? (comma separated)
+2. Which subject do you find the hardest?
+3. How many units have you already completed?
+
+------------------------------------------------------------
+[USER — Goal specific]: 1. DS, DBMS, OS
+2. OS
+3. 2
+[Planner] Stage: collect_subjects | Goal: Semester Exam (exam)
+[STAGE]: collect_subjects
+[BOT]:
+Please list your subjects with confidence (1-10) and units done/total. Example:
+DS 8 4/5, OS 3 1/5, DBMS 6 2/4
+
+------------------------------------------------------------
+[USER — Subjects]: DS 8 4/5, DBMS 6 2/4, OS 3 1/5
+[Planner] Stage: collect_syllabus_method | Goal: Semester Exam (exam)
+[STAGE]: collect_syllabus_method
+[BOT]:
+How would you like to provide your syllabus or topic list?
+1) Paste the syllabus text
+2) Enter topics manually per subject
+3) Upload a file (paste the text here instead)
+4) Let me generate topic suggestions for you
+
+------------------------------------------------------------
+[USER — Syllabus method]: 1
+[Planner] Stage: collect_syllabus_input | Goal: Semester Exam (exam)
+[STAGE]: collect_syllabus_input
+[BOT]:
+Paste your syllabus or topic list here. Use subject headings if possible.
+
+------------------------------------------------------------
+[USER — Syllabus input]: DS: Arrays, Stacks, Queues, Trees, Graphs
+DBMS: ER Model, Normalization, Transac...
+[Planner] Stage: collect_completed | Goal: Semester Exam (exam)
+[STAGE]: collect_completed
+[BOT]:
+Which of these topics have you already completed? 
+  DS: Arrays, Stacks, Queues, Trees, Graphs
+  DBMS: ER Model, Normalization, Transactions, SQL Queries, Indexing
+  OS: CPU Scheduling, Deadlocks, Memory Management, Virtual Memory, File Systems
+
+Format: SubjectName: Topic1, Topic2  (or type 'all pending' if nothing is done)
+
+------------------------------------------------------------
+[USER — Completed topics]: DS: Arrays, Stacks
+DBMS: ER Model
+[Planner] Stage: collect_study_style | Goal: Semester Exam (exam)
+[STAGE]: collect_study_style
+[BOT]:
+How long can you focus in one study block? (25 min, 45 min, 60 min, 90 min)
+
+------------------------------------------------------------
+[USER — Focus duration]: 45 min
+[Planner] Stage: collect_study_style | Goal: Semester Exam (exam)
+[STAGE]: collect_study_style
+[BOT]:
+How long should your breaks be? (5, 10, 15, 20)
+
+------------------------------------------------------------
+[USER — Break duration]: 10
+[Planner] Stage: collect_study_style | Goal: Semester Exam (exam)
+[STAGE]: collect_study_style
+[BOT]:
+When are you usually most productive? (Morning, Afternoon, Evening, Night)
+
+------------------------------------------------------------
+[USER — Productivity peak]: Morning
+[Planner] Stage: collect_energy | Goal: Semester Exam (exam)
+[STAGE]: collect_energy
+[BOT]:
+Do you feel more energetic in the morning or at night?
+
+------------------------------------------------------------
+[USER — Energy peak]: Morning
+[Planner] Stage: collect_learning_style | Goal: Semester Exam (exam)
+[STAGE]: collect_learning_style
+[BOT]:
+How do you prefer to learn? Videos, Books, Interactive Notes, Practice Questions, or Mixed
+
+------------------------------------------------------------
+[USER — Learning style]: Videos
+[Planner] Stage: analyze_user | Goal: Semester Exam (exam)
+[STAGE]: review_plan
+[BOT]:
+Goal: Semester Exam (exam)
+Deadline: 10 days
+Wake: 6 AM  Sleep: 11 PM
+Focus block: 45 min  Break: 10 min
+Productivity peak: Morning  Energy peak: morning
+Subjects:
+  - DS: confidence 8, 4/5 units
+  - DBMS: confidence 6, 2/4 units
+  - OS: confidence 3, 1/5 units
+
+Here is the strategy I recommend:
+A 10-day study strategy focusing on high-priority subjects with a daily revision routine and practice sessions.
+
+Schedule:
+  - OS: daily, morning
+  - DBMS: daily, afternoon
+  - DS: alternate, morning
+  - DBMS: alternate, evening
+  - DBMS: daily, night
+  - DBMS: daily, revision
+  - DBMS: daily, practice
+  - OS: daily, revision
+  - OS: daily, practice
+
+Revision: Daily revision will focus on reviewing completed topics and attempting to recall key concepts. This will involve watching videos related to the completed topics to reinforce understanding.
+Practice: Practice sessions for DBMS and OS will involve hands-on activities such as writing SQL queries, indexing, CPU scheduling, and memory management. Videos will be used to supplement these activities and provide additional context.
+
+Learning path summary:
+  - OS: CPU Scheduling (medium)
+  - OS: Deadlocks (medium)
+  - OS: Memory Management (medium)
+  ...
+
+Reply 'yes' to confirm and generate tasks, or tell me how you'd like to adjust it.
+
+------------------------------------------------------------
+[USER — Review — adjust]: I want more DBMS practice
+[Planner] Stage: review_plan | Goal: Semester Exam (exam)
+[STAGE]: review_plan
+[BOT]:
+Goal: Semester Exam (exam)
+Deadline: 10 days
+Wake: 6 AM  Sleep: 11 PM
+Focus block: 45 min  Break: 10 min
+Productivity peak: Morning  Energy peak: morning
+Subjects:
+  - DS: confidence 8, 4/5 units
+  - DBMS: confidence 6, 2/4 units
+  - OS: confidence 3, 1/5 units
+
+Here is the strategy I recommend:
+A 10-day study plan focusing on subjects with low confidence and high pending topics, with daily revision and practice cadence to ensure effective preparation for the semester exam.
+
+Schedule:
+  - OS: daily, morning
+  - DBMS: daily, afternoon
+  - DS: alternate, morning
+  - DBMS: weekly, evening
+
+Revision: Daily revision will focus on reinforcing previously completed topics, such as ER Model in DBMS and Arrays in DS, using flashcards and concept notes. Weekly revision will cover completed topics, with a focus on weak areas.
+Practice: Daily practice in DBMS will focus on SQL Queries and Indexing, with a goal of completing 5-10 practice problems each day. Alternate days will focus on DS, with a focus on Queues, Trees, and Graphs. OS practice will be weekly, with a focus on CPU Scheduling, Deadlocks, and Memory Management.
+
+Learning path summary:
+  - OS: CPU Scheduling (medium)
+  - OS: Deadlocks (medium)
+  - OS: Memory Management (medium)
+  ...
+
+Reply 'yes' to confirm and generate tasks, or tell me how you'd like to adjust it.
+
+------------------------------------------------------------
+[USER — Review — confirm]: yes
+[Planner] Stage: review_plan | Goal: Semester Exam (exam)
+[STAGE]: done
+[BOT]:
+✅ Plan confirmed for Semester Exam!
+  23 tasks · ~14h 10m total · est. 3 study days
+📅 Day 1 Timetable  (from 1:26 PM)
+
+  4:00 PM – 4:30 PM  🔒 Travel back
+  4:30 PM – 5:15 PM  📖 Study CPU Scheduling  [OS]
+  5:15 PM – 5:45 PM  🔄 Revise CPU Scheduling concepts  [OS]
+  5:45 PM – 5:55 PM  ☕ Break
+  5:55 PM – 6:40 PM  📖 Study Deadlocks  [OS]
+  6:40 PM – 7:10 PM  🔄 Revise Deadlocks concepts  [OS]
+  7:10 PM – 7:20 PM  ☕ Break
+  8:30 PM – 9:00 PM  🔄 Revise Memory Management concepts  [OS]
+  9:00 PM – 9:45 PM  📖 Study Virtual Memory  [OS]
+  9:45 PM – 9:55 PM  ☕ Break
+  9:55 PM – 10:25 PM  🔄 Revise Virtual Memory concepts  [OS]
+  ... +1 more tasks across remaining days
+Type 'next' to start your first session, or 'schedule' for the full timetable.
+
+------------------------------------------------------------
+[TASKS GENERATED]:
+  [critical] Study CPU Scheduling (45 min, learning) [OS / CPU Scheduling] — confidence 3/10
+  [critical] Revise CPU Scheduling concepts (30 min, revision) [OS / CPU Scheduling] — Concept reinforcement for OS
+  [critical] Study Deadlocks (45 min, learning) [OS / Deadlocks] — confidence 3/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [critical] Revise Deadlocks concepts (30 min, revision) [OS / Deadlocks] — Concept reinforcement for OS
+  [critical] Study Memory Management (45 min, learning) [OS / Memory Management] — confidence 3/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [critical] Revise Memory Management concepts (30 min, revision) [OS / Memory Management] — Concept reinforcement for OS
+  [critical] Study Virtual Memory (45 min, learning) [OS / Virtual Memory] — confidence 3/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [critical] Revise Virtual Memory concepts (30 min, revision) [OS / Virtual Memory] — Concept reinforcement for OS
+  [critical] Study File Systems (45 min, learning) [OS / File Systems] — confidence 3/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [critical] Revise File Systems concepts (30 min, revision) [OS / File Systems] — Concept reinforcement for OS
+  [medium] Study Normalization (45 min, learning) [DBMS / Normalization] — confidence 6/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Revise Normalization concepts (30 min, revision) [DBMS / Normalization] — Concept reinforcement for DBMS
+  [medium] Study Transactions (45 min, learning) [DBMS / Transactions] — confidence 6/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Revise Transactions concepts (30 min, revision) [DBMS / Transactions] — Concept reinforcement for DBMS
+  [medium] Study SQL Queries (45 min, learning) [DBMS / SQL Queries] — confidence 6/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Revise SQL Queries concepts (30 min, revision) [DBMS / SQL Queries] — Concept reinforcement for DBMS
+  [medium] Study Indexing (45 min, learning) [DBMS / Indexing] — confidence 6/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Revise Indexing concepts (30 min, revision) [DBMS / Indexing] — Concept reinforcement for DBMS
+  [medium] Study Queues (45 min, learning) [DS / Queues] — confidence 8/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Study Trees (45 min, learning) [DS / Trees] — confidence 8/10
+  [medium] Study Graphs (45 min, learning) [DS / Graphs] — confidence 8/10
+  [low] Break (10 min, break) [General] — Scheduled break
+  [medium] Spaced Revision: Trees (20 min, revision) [DS / Trees] — Spaced revision
+  [medium] Spaced Revision: Graphs (20 min, revision) [DS / Graphs] — Spaced revision
+
+[STRUCTURED STRATEGY]:
+  priority_order: ['OS', 'DBMS', 'DS']
+  practice_subjects: ['DBMS']
+  revision_daily: True
+  focus_block: 45
+  break_block: 10
+  daily_schedule: {'morning': ['OS', 'DBMS', 'DS'], 'afternoon': [], 'evening': [], 'night': ['Revision']}
+
+[ROUTINE COLLECTED]:
+  breakfast: 7:30 AM
+  lunch: 1 PM
+  dinner: 8 PM
+  college_hours: 9am-4pm
+  gym: no
+  travel: 30 min
+  prayer: no
+  fixed_activities: no
+  water_interval: every 2 hours
+
+[LEARNING PATH] (18 items):
+  [1] OS → CPU Scheduling (medium, 45 min) [pending]
+  [2] OS → Deadlocks (medium, 45 min) [pending]
+  [3] OS → Memory Management (medium, 45 min) [pending]
+  [4] OS → Virtual Memory (medium, 45 min) [pending]
+  [5] OS → File Systems (medium, 45 min) [pending]
+  [6] OS → Practice OS topics (medium, 45 min) [pending]
+  [7] DBMS → ER Model (medium, 45 min) [done]
+  [8] DBMS → Normalization (medium, 45 min) [pending]
+  [9] DBMS → Transactions (medium, 45 min) [pending]
+  [10] DBMS → SQL Queries (medium, 45 min) [pending]
+  [11] DBMS → Indexing (medium, 45 min) [pending]
+  [12] DBMS → Practice DBMS topics (medium, 45 min) [pending]
+  [13] DS → Arrays (medium, 45 min) [done]
+  [14] DS → Stacks (medium, 45 min) [done]
+  [15] DS → Queues (medium, 45 min) [pending]
+  [16] DS → Trees (medium, 45 min) [pending]
+  [17] DS → Graphs (medium, 45 min) [pending]
+  [18] DS → Practice DS topics (medium, 45 min) [pending]
